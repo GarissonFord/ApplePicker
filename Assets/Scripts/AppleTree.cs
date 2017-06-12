@@ -3,13 +3,16 @@ using System.Collections;
 
 public class AppleTree : MonoBehaviour {
 
+	public GameObject apple;
+	//Time in seconds until next apple
+	public float nextAppleTime;
 	// Use this for initialization
-	void Start () {
-	
-	}
-	
+
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+		Vector3 position = transform.position;
+		Quaternion rotation = transform.rotation;
+		Instantiate (apple, position, rotation);
 	}
 }

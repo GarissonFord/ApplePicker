@@ -3,13 +3,16 @@ using System.Collections;
 
 public class ApplePicker : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	public GameObject tree, treeSpawn;
+
+	void Start () 
+	{
+		Instantiate (tree, treeSpawn.transform);
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+		
 	}
 }
