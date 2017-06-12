@@ -218,6 +218,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb061946f808ed43acbee82882ecf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tree: {fileID: 147856}
   apple: {fileID: 127358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
-  nextAppleTime: 1
+  appleRate: 1
