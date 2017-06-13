@@ -1,17 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Basket : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () 
+public class Basket : MonoBehaviour 
+{
+	void OnTriggerEnter(Collider other) 
 	{
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	
+		Destroy(other.gameObject);
 	}
 }
