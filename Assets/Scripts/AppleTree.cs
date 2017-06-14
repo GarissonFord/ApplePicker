@@ -9,13 +9,6 @@ public class AppleTree : MonoBehaviour {
 	private float nextApple;
 	// Use this for initialization
 
-	private Rigidbody rb;
-
-	void Start()
-	{
-		rb = GetComponent<Rigidbody> ();
-	}
-
 	// Update is called once per frame
 	void Update () 
 	{
@@ -25,14 +18,8 @@ public class AppleTree : MonoBehaviour {
 			nextApple = Time.time + appleRate;
 
 			Vector3 position = transform.position;
-			position.y -= 3.0f;
 			Quaternion rotation = transform.rotation;
 			Instantiate (apple, position, rotation);
 		}
-	}
-
-	void FixedUpdate()
-	{
-		rb.velocity = new Vector3 (Random.Range(-10.0f, 10.0f), 0.0f, 0.0f);
 	}
 }
