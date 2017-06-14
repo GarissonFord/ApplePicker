@@ -38,5 +38,9 @@ public class ApplePicker : MonoBehaviour {
 		GameObject tBasketGO = basketList [basketIndex];
 		basketList.RemoveAt (basketIndex);
 		Destroy (tBasketGO);
+
+		//Restarts game while not affecting high score
+		if (basketList.Count == 0)
+			Application.LoadLevel ("_Scene_0");
 	}
 }
