@@ -5,7 +5,6 @@ public class Basket : MonoBehaviour
 {
 	void OnTriggerEnter(Collider other) 
 	{
-		if(other.gameObject.CompareTag("Apple"))
-			Destroy(other.gameObject);
+		Destroy(other.gameObject);
 	}
 }
